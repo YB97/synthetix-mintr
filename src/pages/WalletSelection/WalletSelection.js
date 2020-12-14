@@ -391,7 +391,8 @@ const WalletConnectionH1 = styled(H1)`
 
 const WalletConnectionPMega = styled(PMega)`
 	font-size: 18px;
-	font-family: 'apercu-medium', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	font-weight: medium;
 	text-align: center;
 	line-height: 32px;
 	margin-top: 6px;

@@ -8,7 +8,8 @@ export const Thead = styled.thead`
 	color: ${props => props.theme.colorStyles.body};
 	font-size: 12px;
 	text-transform: uppercase;
-	font-family: 'apercu-bold', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
 `;
 
 export const Tbody = styled.tbody`
@@ -41,7 +42,7 @@ export const Td = styled.td`
 	padding: 0 15px;
 	height: 40px;
 	font-size: 14px;
-	font-family: 'apercu-regular', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	text-align: left;
 	&:last-child {
 		text-align: right;

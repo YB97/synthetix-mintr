@@ -114,7 +114,8 @@ const GasMenuWrapper = styled.div`
 const EditText = styled.div`
 	padding-top: 16px;
 	padding-left: 10px;
-	font-family: 'apercu-bold', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
 	border: none;
 	background-color: transparent;
 	font-size: 15px;

@@ -8,7 +8,7 @@
 
 .carousel .control-dots .dot {
 	transition: background 0.25s ease-in;
-	background: #e8e7fd;
+	background: #d5def2;
 	border-radius: 50%;
 	width: 10px;
 	box-shadow: none;
@@ -20,5 +20,9 @@
 }
 
 .carousel .control-dots .dot.selected {
-	background: #727cff;
+	background: #50ca7a;
+}
+
+.dot:focus {
+	outline: none;
 }

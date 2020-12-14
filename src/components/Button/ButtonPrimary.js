@@ -34,6 +34,9 @@ const Button = styled.button`
 	&:hover:not(:disabled) {
 		background-color: ${props => props.theme.colorStyles.buttonPrimaryBgFocus};
 	}
+	&:focus {
+		outline: none;
+	}
 `;
 
 const ButtonMedium = styled(Button)`

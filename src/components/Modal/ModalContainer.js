@@ -38,6 +38,9 @@ const ButtonClose = styled.button`
 	cursor: pointer;
 	background-color: transparent;
 	border: none;
+	&:focus {
+		outline: none;
+	}
 `;
 
 const mapDispatchToProps = {

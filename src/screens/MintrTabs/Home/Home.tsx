@@ -70,8 +70,7 @@ const Button = styled.button<{ big }>`
 	background-color: ${props => props.theme.colorStyles.panelButton};
 	border: 1px solid ${props => props.theme.colorStyles.borders};
 	border-radius: 5px;
-	box-shadow: 0px 5px 10px 5px ${props => props.theme.colorStyles.shadow1};
-	transition: transform ease-in 0.2s;
+	transition: transform, background-color 0.15s linear;
 	&:hover {
 		background-color: ${props => props.theme.colorStyles.panelButtonHover};
 		box-shadow: 0px 5px 10px 8px ${props => props.theme.colorStyles.shadow1};
@@ -79,6 +78,9 @@ const Button = styled.button<{ big }>`
 	}
 	&:disabled {
 		opacity: 0.5;
+	}
+	&:focus {
+		outline: none;
 	}
 `;
 
@@ -98,8 +100,8 @@ const ButtonRow = styled.div`
 `;
 
 const ActionImage = styled.img`
-	height: 48px;
-	width: 48px;
+	height: 68px;
+	width: 68px;
 `;
 
 const mapStateToProps = state => ({

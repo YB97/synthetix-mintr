@@ -58,6 +58,7 @@ const onWalletClick = ({ wallet, derivationPath, updateWalletStatus, setCurrentP
 
 const OnBoardingCarousel = ({ pageIndex, setPageIndex, currentTheme }) => {
 	const { t } = useTranslation();
+
 	return (
 		<CarouselContainer>
 			<Carousel
@@ -73,8 +74,9 @@ const OnBoardingCarousel = ({ pageIndex, setPageIndex, currentTheme }) => {
 					<OnboardingH1>{t('onboarding.slides.welcome.title')}</OnboardingH1>
 					<OnboardingPMega>{t('onboarding.slides.welcome.description')}</OnboardingPMega>
 					<OnboardingIllustration
-						style={{ marginTop: '20px' }}
-						src={`/images/onboarding/welcome-${currentTheme ? 'dark' : 'light'}.png`}
+						style={{ padding: '40px 70px' }}
+						src={`/images/onboarding/welcome.svg`}
+						// src={`/images/onboarding/welcome-${currentTheme ? 'dark' : 'light'}.png`}
 					/>
 				</CarouselSlide>
 				<CarouselSlide>
@@ -217,6 +219,8 @@ const CarouselContainer = styled.div`
 const OnboardingH1 = styled(H1)`
 	text-transform: none;
 	margin-bottom: 24px;
+	font-weight: 600;
+	color: ${({ theme }) => theme.colorStyles.textDark};
 `;
 
 const OnboardingPMega = styled(PMega)`
@@ -229,6 +233,7 @@ const OnboardingPMega = styled(PMega)`
 
 const OnboardingIllustration = styled.img`
 	width: 60vw;
+	user-select: none;
 `;
 
 const ButtonRow = styled.div`
@@ -270,12 +275,14 @@ const Button = styled.button`
 	align-items: center;
 	background-color: ${props => props.theme.colorStyles.panelButton};
 	border: 1px solid ${props => props.theme.colorStyles.borders};
-	box-shadow: 0px 5px 10px 5px ${props => props.theme.colorStyles.shadow1};
 	opacity: ${props => (props.disabled ? '0.4' : 1)};
 	cursor: pointer;
-	transition: all 0.1s ease;
+	transition: all 0.15s linear;
 	:hover {
 		background-color: ${props => props.theme.colorStyles.panelButtonHover};
+	}
+	&:focus {
+		outline: none;
 	}
 `;
 
@@ -292,7 +299,7 @@ const Icon = styled.img`
 `;
 
 const Link = styled.a`
-	background-color: ${props => props.theme.colorStyles.buttonTertiaryBgFocus};
+	background-color: ${({ theme }) => theme.colorStyles.buttonBright};
 	border: 1px solid ${props => props.theme.colorStyles.borders};
 	text-transform: uppercase;
 	font-size: 32px;
@@ -305,6 +312,11 @@ const Link = styled.a`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: background-color 0.15s linear;
+
+	&:hover {
+		background-color: ${({ theme }) => theme.colorStyles.buttonTertiaryBgFocus};
+	}
 `;
 
 const BottomLinks = styled.div`
@@ -334,6 +346,9 @@ const RoundButton = styled.button`
 	width: 40px;
 	border: 1px solid ${props => props.theme.colorStyles.borders};
 	background-color: ${props => props.theme.colorStyles.buttonTertiaryBgFocus};
+	&:focus {
+		outline: none;
+	}
 `;
 
 const LanguageButtonWrapper = styled.div`

@@ -60,7 +60,7 @@ const Charts = ({ walletBalances: { crypto }, debtData, totalEscrow = 0 }) => {
 			<BoxInner>
 				<BoxHeading>
 					<H6 style={{ textTransform: 'uppercase' }}>{t('dashboard.holdings.title')}</H6>
-					<H6>{formatCurrency(snxBalance) || 0} SNX</H6>
+					<H6>{formatCurrency(snxBalance) || 0} PHT</H6>
 				</BoxHeading>
 				{chartData.map((data, i) => {
 					return <BarChart key={i} data={data} />;

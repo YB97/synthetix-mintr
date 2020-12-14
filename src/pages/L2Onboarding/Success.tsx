@@ -51,7 +51,8 @@ const Button = styled(CTAButton)`
 
 const StyledLink = styled(ExternalLink)`
 	text-transform: uppercase;
-	font-family: 'apercu-bold';
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
 	font-size: 14px;
 	color: #00e2df;
 `;

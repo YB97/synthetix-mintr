@@ -5,7 +5,7 @@ import COLORS from 'styles/colors';
 
 const commonStyle = {
 	fontSize: 14,
-	fontFamily: 'apercu-regular',
+	fontFamily: 'Poppins',
 	borderRadius: '5px',
 	padding: '15px',
 };

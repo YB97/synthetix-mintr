@@ -2,8 +2,8 @@
 	"onboarding": {
 		"slides": {
 			"welcome": {
-				"title": "Bienvenue sur Mintr!",
-				"description": "Mintr est une dApp pour les détenteurs de SNX. Si vous n'avez jamais utilisé Mintr auparavant, n'hésitez pas à lire notre rapide introduction."
+				"title": "Bienvenue sur Prophet!",
+				"description": "Prophet est une dApp pour les détenteurs de SNX. Si vous n'avez jamais utilisé Prophet auparavant, n'hésitez pas à lire notre rapide introduction."
 			},
 			"whatIsSynthetix": {
 				"title": "Qu'est-ce Synthetix?",
@@ -28,7 +28,7 @@
 		"walletSelection": {
 			"success": {
 				"title": "Sélectionnez un portefeuille",
-				"subtitle": "Merci de sélectionner le portefeuille que vous souhaitez utiliser avec Mintr"
+				"subtitle": "Merci de sélectionner le portefeuille que vous souhaitez utiliser avec Prophet"
 			},
 			"loading": {
 				"connectInstructions": "Merci de suivre les instructions sur votre appareil pour dévérouiller votre portefeuille.",
@@ -36,7 +36,7 @@
 			},
 			"error": {
 				"title": "Erreur",
-				"subtitle": "Mintr n'as pas pu accéder à votre portefeuille.",
+				"subtitle": "Prophet n'as pas pu accéder à votre portefeuille.",
 				"retry": "Réessayer"
 			},
 			"addWallet": {
@@ -592,11 +592,11 @@
 		"speed": "Vitesse de transaction estimée:"
 	},
 	"maintenance": {
-		"title": "Mintr est actuellement indisponible (mise à jour).",
+		"title": "Prophet est actuellement indisponible (mise à jour).",
 		"subtitle": "Désolé pour la gêne occasionnée, le site sera de retour très rapidement."
 	},
 	"mobileLanding": {
-		"title": "Mintr n'est actuellement pas disponible sur mobile et tablette.",
+		"title": "Prophet n'est actuellement pas disponible sur mobile et tablette.",
 		"subtitle": "Nous espérons avoir une version disponible dans les prochains mois."
 	},
 	"tooltip": {

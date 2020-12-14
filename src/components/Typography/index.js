@@ -58,6 +58,7 @@ export const H6 = props => {
 
 export const PMega = props => {
 	const { pMega } = useContext(ThemeContext).textStyles;
+
 	return (
 		<DynamicComponent {...pMega} {...props}>
 			{props.children}

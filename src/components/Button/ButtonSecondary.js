@@ -34,6 +34,9 @@ const Button = styled.button`
 	&:hover {
 		background-color: ${props => props.theme.colorStyles.buttonTertiaryBgFocus};
 	}
+	&:focus {
+		outline: none;
+	}
 `;
 
 export default ButtonSecondary;

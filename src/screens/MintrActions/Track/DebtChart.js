@@ -56,7 +56,7 @@ const Chart = ({ data }) => {
 					height={20}
 					dataKey="timestamp"
 					interval="preserveEnd"
-					tick={{ fontSize: 12, fill: colorStyles.subtext, fontFamily: 'apercu-regular' }}
+					tick={{ fontSize: 12, fill: colorStyles.subtext, fontFamily: 'Poppins' }}
 					axisLine={false}
 					tickLine={false}
 					tickFormatter={tick => format(new Date(tick), 'd MMM yy')}
@@ -68,7 +68,7 @@ const Chart = ({ data }) => {
 					tickLine={false}
 					strokeWidth={1}
 					tickFormatter={tick => numbro(tick).format({ average: true })}
-					tick={{ fontSize: 12, fill: colorStyles.subtext, fontFamily: 'apercu-regular' }}
+					tick={{ fontSize: 12, fill: colorStyles.subtext, fontFamily: 'Poppins' }}
 				/>
 				<Tooltip
 					cursor={{ stoke: colorStyles.borders }}
@@ -126,7 +126,7 @@ const LegendIcon = styled.div`
 `;
 
 const LegendText = styled.span`
-	font-family: 'apercu-regular';
+	font-family: 'Poppins';
 	font-size: 12px;
 	color: ${props => props.theme.colorStyles.body};
 `;

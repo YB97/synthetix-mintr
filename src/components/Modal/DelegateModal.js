@@ -243,13 +243,17 @@ const StyledH5 = styled(H5)`
 
 const ButtonRemove = styled.button`
 	cursor: pointer;
-	font-family: 'apercu-bold', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
 	font-size: 12px;
 	color: ${props => props.theme.colorStyles.brandRed};
 	border: none;
 	background: transparent;
 	text-transform: uppercase;
 	padding: 0;
+	&:focus {
+		outline: none;
+	}
 `;
 
 const TableWrapper = styled.div`

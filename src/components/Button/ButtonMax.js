@@ -29,6 +29,9 @@ const Button = styled.button`
 	&:hover {
 		background-color: ${props => props.theme.colorStyles.buttonPrimaryBgFocus};
 	}
+	&:focus {
+		outline: none;
+	}
 `;
 
 export default withTranslation()(ButtonMax);

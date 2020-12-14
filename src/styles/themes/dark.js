@@ -1,6 +1,7 @@
 import COLORS from '../colors';
 
 export default {
+	textDark: COLORS.white,
 	heading: COLORS.white,
 	body: COLORS.dark6,
 	subtext: COLORS.dark5,
@@ -8,6 +9,7 @@ export default {
 	panels: COLORS.dark2,
 	background: COLORS.dark1,
 	hyperlink: COLORS.buttonLight,
+	primary: COLORS.brandGreen,
 
 	buttonPrimaryText: COLORS.white,
 	buttonPrimaryBg: COLORS.buttonLight,
@@ -16,6 +18,8 @@ export default {
 
 	buttonTertiaryText: COLORS.dark6,
 	buttonTertiaryBgFocus: COLORS.dark3,
+	buttonTertiaryBgFocusDarken: COLORS.dark2,
+	buttonBright: COLORS.dark2,
 
 	simpleSelectOption: COLORS.dark2,
 	simpleSelectSelectedOption: COLORS.dark3,

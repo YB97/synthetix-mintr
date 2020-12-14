@@ -244,7 +244,8 @@ const ActionImage = styled.img`
 
 const Amount = styled.span`
 	color: ${props => props.theme.colorStyles.body};
-	font-family: 'apercu-medium';
+	font-family: 'Poppins', sans-serif;
+	font-weight: medium;
 	font-size: 24px;
 	margin: 8px 0px 0px 0px;
 `;

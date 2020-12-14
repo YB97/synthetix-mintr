@@ -128,6 +128,9 @@ const Button = styled.button`
 	border-right: 1px solid ${props => props.theme.colorStyles.borders};
 	justify-content: space-between;
 	background-color: ${props => props.theme.colorStyles.buttonTertiaryBgFocus};
+	&:focus {
+		outline: none;
+	}
 `;
 
 const CurrencyIcon = styled.img`

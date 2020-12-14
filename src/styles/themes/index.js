@@ -2,9 +2,9 @@ import themeLight from './light';
 import themeDark from './dark';
 
 export const fontFamilies = {
-	regular: 'apercu-regular',
-	medium: 'apercu-medium',
-	bold: 'apercu-bold',
+	regular: 'Poppins',
+	medium: 'Poppins',
+	bold: 'Poppins',
 };
 
 export const isDarkTheme = theme => theme === 'dark';
@@ -26,9 +26,10 @@ const theme = themeName => {
 		h2: {
 			as: 'h2',
 			fontSize: [24],
+			fontWeight: 600,
 			letterSpacing: 2,
 			fontFamily: fontFamilies.medium,
-			color: colorStyles.heading,
+			color: colorStyles.textDark,
 			m: '30px 0px 20px 0px',
 		},
 		pageTitle: {
@@ -48,7 +49,7 @@ const theme = themeName => {
 		h5: {
 			as: 'h5',
 			fontSize: [14, 16, 18],
-			letterSpacing: 1,
+			// letterSpacing: 1,
 			fontWeight: 500,
 			fontFamily: fontFamilies.medium,
 			color: colorStyles.heading,
@@ -67,7 +68,8 @@ const theme = themeName => {
 			as: 'p',
 			fontSize: [20],
 			lineHeight: ['28px'],
-			fontFamily: fontFamilies.regular,
+			fontWeight: 600,
+			fontFamily: fontFamilies.medium,
 			color: colorStyles.body,
 			m: '24px 0px 0px 0px',
 		},
@@ -176,9 +178,9 @@ const theme = themeName => {
 			as: 'span',
 			fontSize: [16, 24, 32],
 			lineHeight: ['16px', '24px', '32px'],
-			fontWeight: 500,
+			fontWeight: 600,
 			fontFamily: fontFamilies.medium,
-			color: colorStyles.body,
+			color: colorStyles.primary,
 			letterSpacing: 1,
 			m: '0px 0px 8px 0px',
 		},
@@ -220,7 +222,7 @@ const theme = themeName => {
 			as: 'span',
 			fontSize: [10, 12, 14],
 			lineHeight: ['12px', '14px', '16px'],
-			fontWeight: 500,
+			fontWeight: 600,
 			fontFamily: fontFamilies.regular,
 			color: colorStyles.buttonTertiaryText,
 			letterSpacing: 0.6,

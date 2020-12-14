@@ -160,6 +160,9 @@ const Button = styled.button`
 	background: #282862;
 	color: #cacaf1;
 	border: none;
+	&:focus {
+		outline: none;
+	}
 `;
 
 const mapStateToProps = (state: any) => ({

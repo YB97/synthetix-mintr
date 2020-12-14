@@ -1,14 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
-    <title>Send</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Send" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
-        <g transform="translate(0.000000, 8.000000)" fill-rule="nonzero" id="Path" stroke="#6D3AD3">
-            <polygon fill="#935DFF" points="34.5518369 34.4165762 23.8614693 46.08 28.3070812 29.44 34.56 34.4015618"></polygon>
-            <polygon fill="#935DFF" points="50.5800973 46.08 35.5207585 35.2257087 28.3070812 29.44 62.72 1.28"></polygon>
-            <polygon fill="#7E4EDC" points="62.72 1.28 28.3722939 30.1931887 23.8614693 46.08 20.48 25.441871"></polygon>
-            <polygon fill="#935DFF" points="20.5083468 25.6 1.28 17.605264 62.72 1.28"></polygon>
-        </g>
-    </g>
+<svg width="85" height="80" viewBox="0 0 85 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M28.8721 50.4521L40.6236 65.846C41.4575 66.9395 43.1385 66.8522 43.8557 65.6697L55.991 45.7287C55.991 45.7287 35.4573 44.996 35.5903 45.3778C35.7234 45.7596 28.8721 50.4521 28.8721 50.4521Z" fill="#0F81CF"/>
+<path d="M62.1283 1.40417C52.5429 9.65934 21.7803 36.819 10.1382 47.1046C8.59983 48.4618 9.60481 50.9913 11.6549 50.9337L28.8739 50.4579L40.5915 65.8049C41.0646 66.4201 41.7982 66.6688 42.4799 66.5661C43.039 66.4827 38.8855 52.0832 38.8855 52.0832C38.8855 52.0832 59.3786 58.4544 69.0934 61.4558C71.4856 62.194 73.841 60.1943 73.4829 57.7151C71.6608 45.0778 67.1073 13.4809 65.5492 2.68116C65.3107 1.05172 63.3718 0.331538 62.1283 1.40417Z" fill="#4BB6FF"/>
+<path d="M42.4789 66.5602C43.038 66.4768 38.8845 52.0773 38.8845 52.0773L56.9178 17.6707C57.043 17.4394 56.7225 17.2285 56.5565 17.4271L28.8729 50.452L40.5904 65.799C41.0583 66.416 41.792 66.6647 42.4789 66.5602Z" fill="#2C9FED"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="68.3966" height="59.847" fill="white" transform="translate(0.205078 22.8247) rotate(-19.2127)"/>
+</clipPath>
+</defs>
 </svg>

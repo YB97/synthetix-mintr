@@ -250,7 +250,7 @@ const getSignerConfig = ({ type, networkId, derivationPath, networkName }) => {
 
 	if (type === SUPPORTED_WALLETS_MAP.COINBASE) {
 		return {
-			appName: 'Mintr',
+			appName: 'Prophet',
 			appLogoUrl: `${window.location.origin}/images/mintr-leaf-logo.png`,
 			jsonRpcUrl: INFURA_JSON_RPC_URLS[networkId],
 			networkId,

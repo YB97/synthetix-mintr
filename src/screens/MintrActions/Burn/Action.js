@@ -227,7 +227,8 @@ const AmountButton = styled.button`
 	border: 1px solid ${props => props.theme.colorStyles.borders};
 	border-radius: 3px;
 	color: ${props => props.theme.colorStyles.buttonPrimaryText};
-	font-family: 'apercu-medium';
+	font-family: 'Poppins', sans-serif;
+	font-weight: medium;
 	font-size: 16px;
 	background-color: ${props => props.theme.colorStyles.buttonPrimaryBg};
 	cursor: pointer;

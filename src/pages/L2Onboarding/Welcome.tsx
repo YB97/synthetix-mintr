@@ -16,7 +16,7 @@ const Welcome: React.FC<WelcomeProps> = ({ onNext }) => {
 			icon: <BurnIcon />,
 			title: 'STEP 1: Burn all DEBT',
 			copy:
-				'Burn enough Goerli sUSD to cover your debt, as displayed in the left-hand panel on Mintr.',
+				'Burn enough Goerli sUSD to cover your debt, as displayed in the left-hand panel on Prophet.',
 		},
 		{
 			icon: <SendIcon />,

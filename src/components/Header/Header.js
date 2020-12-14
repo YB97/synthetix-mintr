@@ -11,13 +11,12 @@ import { WalletStatusButton } from '../Button';
 import ThemeSwitcher from '../ThemeSwitcher';
 
 import { setCurrentPage } from '../../ducks/ui';
-import { Globe, SupportBubble } from '../Icons';
+import { Globe } from '../Icons';
 
 import { LanguageDropdown } from '../../components/Dropdown';
 import Logo from '../../components/Logo';
 
 import { PAGES_BY_KEY } from '../../constants/ui';
-import { LINKS } from 'constants/links';
 
 const Header = ({ walletDetails, setCurrentPage }) => {
 	const { t } = useTranslation();
@@ -27,16 +26,13 @@ const Header = ({ walletDetails, setCurrentPage }) => {
 	return (
 		<HeaderWrapper>
 			<HeaderBlock>
-				<SmallLogo />
-				<Network>{networkName}</Network>
+				<SmallLogo isSmall />
 			</HeaderBlock>
 			<HeaderBlock>
 				<WalletStatusButton onClick={() => setCurrentPage(PAGES_BY_KEY.WALLET_SELECTION)}>
 					{shortenAddress(currentWallet)}
+					<Network>{networkName}</Network>
 				</WalletStatusButton>
-				<RoundButton as="a" href={LINKS.Support} target="_blank">
-					<SupportBubble />
-				</RoundButton>
 				<LanguageButtonWrapper>
 					<RoundButton onClick={() => setFlagVisibility(true)}>
 						<Globe />
@@ -66,10 +62,11 @@ const HeaderWrapper = styled.div`
 
 const HeaderBlock = styled.div`
 	display: flex;
+	align-items: center;
 `;
 
 const SmallLogo = styled(Logo)`
-	width: 104px;
+	width: 40px;
 	margin-right: 8px;
 `;
 
@@ -85,6 +82,9 @@ const RoundButton = styled.button`
 	width: 40px;
 	border: 1px solid ${props => props.theme.colorStyles.borders};
 	background-color: ${props => props.theme.colorStyles.buttonTertiaryBgFocus};
+	&:focus {
+		outline: none;
+	}
 `;
 
 const LanguageButtonWrapper = styled.div`
@@ -92,15 +92,18 @@ const LanguageButtonWrapper = styled.div`
 `;
 
 const Network = styled.div`
-	margin-top: 4px;
-	background-color: ${props => props.theme.colorStyles.buttonTertiaryBgFocus};
+	background-color: ${props => props.theme.colorStyles.buttonTertiaryBgFocusDarken};
 	display: flex;
 	align-items: center;
 	text-transform: uppercase;
-	color: ${props => props.theme.colorStyles.themeToggleFontColor};
+	color: ${props => props.theme.colorStyles.subtext};
 	padding: 5px 10px;
-	font-size: 14px;
+	font-size: 12px;
 	border-radius: 2px;
+	height: min-content;
+	margin-left: 20px;
+	font-weight: 600;
+	border-radius: 20px;
 `;
 
 const mapStateToProps = state => ({

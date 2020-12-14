@@ -1,9 +1,9 @@
 [![CircleCI](https://circleci.com/gh/Synthetixio/synthetix-mintr.svg?style=svg)](https://circleci.com/gh/Synthetixio/synthetix-mintr) [![Netlify Status](https://api.netlify.com/api/v1/badges/817f3cc2-ba8e-4d03-8375-00cd0cede28c/deploy-status)](https://app.netlify.com/sites/synthetix-mintr/deploys) [![Discord](https://img.shields.io/discord/413890591840272394.svg?color=768AD4&label=discord&logo=https%3A%2F%2Fdiscordapp.com%2Fassets%2F8c9701b98ad4372b58f13fd9f65f966e.svg)](https://discordapp.com/channels/413890591840272394/)
 [![Twitter Follow](https://img.shields.io/twitter/follow/synthetix_io.svg?label=synthetix_io&style=social)](https://twitter.com/synthetix_io)
 
-# Mintr v2
+# Prophet v2
 
-This is the code for the new Synthetix Mintr dApp: https://mintr.synthetix.io.
+This is the code for the new Synthetix Prophet dApp: https://mintr.synthetix.io.
 
 For translator instructions, [go here](#translator-instructions).
 
@@ -15,7 +15,7 @@ The dApp communicates with the [Synthetix contracts](https://developer.synthetix
 - Transfer `SNX` to other accounts
 - Deposit (or withdrawl) `sUSD` into the `Depot` contract, to go in the queue for exchanging with `ETH` at current market price
 
-Mintr v2 supports the following wallet providers:
+Prophet v2 supports the following wallet providers:
 
 - Metamask
 - Trezor

@@ -1,6 +1,7 @@
 import COLORS from '../colors';
 
 export default {
+	textDark: COLORS.light0,
 	heading: COLORS.light1,
 	body: COLORS.light2,
 	subtext: COLORS.light3,
@@ -8,6 +9,7 @@ export default {
 	panels: COLORS.white,
 	background: COLORS.light7,
 	hyperlink: COLORS.buttonLight,
+	primary: COLORS.brandGreen,
 
 	buttonPrimaryText: COLORS.white,
 	buttonPrimaryBg: COLORS.buttonLight,
@@ -18,14 +20,16 @@ export default {
 	simpleSelectSelectedOption: COLORS.light5,
 	simpleSelectHoveredOption: COLORS.light6,
 
-	buttonTertiaryText: COLORS.light3,
-	buttonTertiaryBgFocus: COLORS.light6,
+	buttonTertiaryText: COLORS.light2,
+	buttonTertiaryBgFocus: COLORS.light7,
+	buttonTertiaryBgFocusDarken: COLORS.light6,
+	buttonBright: COLORS.light11,
 
 	inputLabelSmall: COLORS.light2,
 	inputTextSmall: COLORS.buttonLight,
 
 	panelButton: COLORS.white,
-	panelButtonHover: COLORS.white,
+	panelButtonHover: COLORS.light6,
 	menu: COLORS.light6,
 
 	accentDark: COLORS.light4,

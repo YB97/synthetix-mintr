@@ -11,14 +11,14 @@ const BarChart = ({ data }) => {
 		<Container>
 			<Bar style={{ width: Math.max((100 * dataLeft.value) / total, 1) + '%' }}>
 				<LabelLeft>
-					<PMedium style={{ fontFamily: 'apercu-medium' }}>
+					<PMedium style={{ fontWeight: 'medium' }}>
 						{dataLeft.label}: {formatCurrency(dataLeft.value)}
 					</PMedium>
 				</LabelLeft>
 			</Bar>
 			<Bar style={{ width: Math.max((100 * dataRight.value) / total, 1) + '%' }}>
 				<LabelRight>
-					<PMedium style={{ fontFamily: 'apercu-medium' }}>
+					<PMedium style={{ fontWeight: 'medium' }}>
 						{dataRight.label}: {formatCurrency(dataRight.value)}
 					</PMedium>
 				</LabelRight>

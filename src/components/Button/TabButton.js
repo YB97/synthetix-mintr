@@ -20,12 +20,11 @@ const Button = styled.button`
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	transition: all ease-in 0.1s;
-	font-family: ${props => (props.isSelected ? 'apercu-bold' : 'apercu-medium')};
+	font-weight: 600;
 	background-color: ${props =>
 		props.isSelected ? props.theme.colorStyles.borders : props.theme.colorStyles.menu};
 	border-bottom: 8px solid
-		${props =>
-			props.isSelected ? props.theme.colorStyles.accentDark : props.theme.colorStyles.menu};
+		${props => (props.isSelected ? props.theme.colorStyles.primary : props.theme.colorStyles.menu)};
 	color: ${props => props.theme.colorStyles.subtext};
 	&:disabled {
 		opacity: 0.3;
@@ -35,7 +34,10 @@ const Button = styled.button`
 		background-color: ${props => props.theme.colorStyles.borders};
 		border-bottom: 8px solid
 			${props =>
-				props.isSelected ? props.theme.colorStyles.accentDark : props.theme.colorStyles.borders};
+				props.isSelected ? props.theme.colorStyles.primary : props.theme.colorStyles.borders};
+	}
+	&:focus {
+		outline: none;
 	}
 `;
 

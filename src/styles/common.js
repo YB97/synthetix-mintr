@@ -34,7 +34,8 @@ export const FlexDivCentered = styled(FlexDiv)`
 `;
 
 export const Strong = styled.strong`
-	font-family: 'apercu-bold';
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
 `;
 
 export const FlexDivCol = styled(FlexDiv)`

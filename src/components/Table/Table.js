@@ -148,7 +148,8 @@ const ReactTable = styled.div`
 			}
 			${TableCellHead} {
 				color: ${props => props.theme.colorStyles.body};
-				font-family: 'apercu-bold';
+				font-family: 'Poppins', sans-serif;
+				font-weight: bold;
 				background-color: ${props => props.theme.colorStyles.surfaceL3};
 			}
 			${TableBodyRow} {

@@ -53,6 +53,9 @@ const Button = styled.button`
 	align-items: center;
 	cursor: pointer;
 	transition: all 0.1s ease;
+	&:focus {
+		outline: none;
+	}
 `;
 
 export default Paginator;

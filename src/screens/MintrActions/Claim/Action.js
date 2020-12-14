@@ -183,14 +183,16 @@ const Box = styled.div`
 
 const Amount = styled.span`
 	color: ${props => props.theme.colorStyles.hyperlink};
-	font-family: 'apercu-medium';
+	font-family: 'Poppins', sans-serif;
+	font-weight: medium;
 	font-size: 24px;
 	margin: 12px 0px 0px 0px;
 `;
 
 const Highlighted = styled.span`
 	text-transform: uppercase;
-	font-family: 'apercu-bold';
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
 	margin: 0px 8px;
 	color: ${props =>
 		props.red ? props.theme.colorStyles.brandRed : props.theme.colorStyles.hyperlink};

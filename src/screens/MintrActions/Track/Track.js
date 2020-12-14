@@ -197,13 +197,15 @@ const ActionImage = styled.img`
 const StyledSubtext = styled(Subtext)`
 	text-transform: uppercase;
 	color: ${props => props.theme.colorStyles.body};
-	font-family: 'apercu-medium';
+	font-family: 'Poppins', sans-serif;
+	font-weight: medium;
 	margin: 0;
 `;
 
 const Amount = styled.span`
 	color: ${props => props.theme.colorStyles.hyperlink};
-	font-family: 'apercu-medium';
+	font-family: 'Poppins', sans-serif;
+	font-weight: medium;
 	font-size: 18px;
 	margin-top: 4px;
 `;

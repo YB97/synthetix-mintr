@@ -39,6 +39,9 @@ const Button = styled.button`
 		opacity: 0.4;
 		pointer-events: none;
 	}
+	&:focus {
+		outline: none;
+	}
 `;
 
 export default ButtonTertiary;

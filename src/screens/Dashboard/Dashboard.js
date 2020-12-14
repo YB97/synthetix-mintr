@@ -55,7 +55,9 @@ const Dashboard = ({
 			<Content>
 				<Container>
 					<ContainerHeader>
-						<H5 mb={0}>{t('dashboard.sections.wallet')}</H5>
+						<H5 mb={0} style={{ textTransform: 'none' }}>
+							{t('dashboard.sections.wallet')}
+						</H5>
 						<ButtonContainer>
 							<ButtonTertiary onClick={() => showModal({ modalType: MODAL_TYPES_TO_KEY.DELEGATE })}>
 								{t('dashboard.buttons.delegate')}
@@ -94,7 +96,7 @@ const Dashboard = ({
 						</LiquidationContainer>
 					</PricesContainer>
 					<PricesContainer>
-						{['SNX', 'ETH'].map(asset => {
+						{['PHT', 'ETH'].map(asset => {
 							return (
 								<Asset key={asset}>
 									<CurrencyIcon src={`/images/currencies/${asset}.svg`} />
@@ -214,7 +216,8 @@ const Asset = styled.div`
 
 const CurrencyPrice = styled.div`
 	font-size: 16px;
-	font-family: 'apercu-medium', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	font-weight: medium;
 	margin-left: 4px;
 	align-items: center;
 	color: ${props => props.theme.colorStyles.body};

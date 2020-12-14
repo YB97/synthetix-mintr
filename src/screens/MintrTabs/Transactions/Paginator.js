@@ -76,7 +76,8 @@ const Button = styled.button`
 	align-items: center;
 	cursor: pointer;
 	margin: 0 5px;
-	font-family: 'apercu-medium', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	font-weight: medium;
 	font-size: 14px;
 	line-height: 25px;
 	font-weight: 500;

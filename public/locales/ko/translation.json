@@ -2,8 +2,8 @@
 	"onboarding": {
 		"slides": {
 			"welcome": {
-				"title": "Mintr(민터)에 오신 걸 환영합니다!",
-				"description": "Mintr은 SNX 홀더를 위한 디앱입니다. 만약 Mintr을 사용해보신 적이 없으시다면, Mintr 가이드를 먼저 읽어주세요."
+				"title": "Prophet(민터)에 오신 걸 환영합니다!",
+				"description": "Mintr은 SNX 홀더를 위한 디앱입니다. 만약 Mintr을 사용해보신 적이 없으시다면, Prophet 가이드를 먼저 읽어주세요."
 			},
 			"whatIsSynthetix": {
 				"title": "신세틱스(Synthetix)가 뭔가요?",
@@ -599,7 +599,7 @@
 		"speed": "예상 전송 속도:"
 	},
 	"maintenance": {
-		"title": "Mintr 업그레이드 중으로 현재 이용하실 수 없습니다.",
+		"title": "Prophet 업그레이드 중으로 현재 이용하실 수 없습니다.",
 		"subtitle": "불편을 드려 죄송합니다. 빠른 시간 내에 복구하겠습니다."
 	},
 	"mobileLanding": {

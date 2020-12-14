@@ -22,6 +22,9 @@ const Button = styled.button`
 	font-size: 14px;
 	text-transform: uppercase;
 	cursor: pointer;
+	&:focus {
+		outline: none;
+	}
 `;
 
 export default DashboardHeaderButton;

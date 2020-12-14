@@ -18,7 +18,8 @@ const BorderlessButton = ({
 };
 
 const Button = styled.button`
-	font-family: 'apercu-bold', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
 	text-transform: uppercase;
 	border: none;
 	background-color: transparent;
@@ -28,6 +29,9 @@ const Button = styled.button`
 	color: ${props => props.theme.colorStyles.hyperlink};
 	:hover {
 		text-decoration: underline;
+	}
+	&:focus {
+		outline: none;
 	}
 `;
 

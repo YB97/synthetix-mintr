@@ -91,7 +91,8 @@ const ButtonRow = styled.div`
 const Error = styled.div`
 	color: ${props => props.theme.colorStyles.brandRed};
 	font-size: 16px;
-	font-family: 'apercu-medium', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	font-weight: medium;
 	display: flex;
 	justify-content: center;
 	margin-top: 40px;
