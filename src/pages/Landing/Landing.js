@@ -75,38 +75,51 @@ const OnBoardingCarousel = ({ pageIndex, setPageIndex, currentTheme }) => {
 					<OnboardingPMega>{t('onboarding.slides.welcome.description')}</OnboardingPMega>
 					<OnboardingIllustration
 						style={{ padding: '40px 70px' }}
-						src={`/images/onboarding/welcome.svg`}
-						// src={`/images/onboarding/welcome-${currentTheme ? 'dark' : 'light'}.png`}
+						src="/images/onboarding/welcome.svg"
 					/>
 				</CarouselSlide>
 				<CarouselSlide>
 					<OnboardingH1>{t('onboarding.slides.whatIsSynthetix.title')}</OnboardingH1>
 					<OnboardingPMega>{t('onboarding.slides.whatIsSynthetix.description')}</OnboardingPMega>
-					<OnboardingIllustration
-						src={`/images/onboarding/what-is-synthetix-${currentTheme ? 'dark' : 'light'}.png`}
-					/>
+					<OnboardingIllustration style={{ padding: '40px' }} src="/images/onboarding/coins.png" />
 				</CarouselSlide>
 
 				<CarouselSlide>
 					<OnboardingH1>{t('onboarding.slides.whyStakeSnx.title')}</OnboardingH1>
 					<OnboardingPMega>{t('onboarding.slides.whyStakeSnx.description')}</OnboardingPMega>
 					<OnboardingIllustration
-						src={`/images/onboarding/why-stake-${currentTheme ? 'dark' : 'light'}.png`}
+						style={{ margin: '50px 60px', width: '50%' }}
+						src="/images/onboarding/stake-pht.svg"
 					/>
 				</CarouselSlide>
 
 				<CarouselSlide>
 					<OnboardingH1>{t('onboarding.slides.howStakeSnx.title')}</OnboardingH1>
 					<OnboardingPMega>{t('onboarding.slides.howStakeSnx.description')}</OnboardingPMega>
-					<OnboardingIllustration
-						src={`/images/onboarding/what-to-do-${currentTheme ? 'dark' : 'light'}.png`}
-					/>
+					<OnboardingIllustrationBox>
+						<OnboardingIllustration style={{ width: '30%' }} src="/images/onboarding/chart.svg" />
+						<OnboardingIllustrationContent>
+							<div style={{ marginBottom: '15px' }}>
+								<OnboardingIllustrationNumber>650%</OnboardingIllustrationNumber>
+								<OnboardingIllustrationText>
+									Current collaterlization ratio
+								</OnboardingIllustrationText>
+							</div>
+							<div>
+								<OnboardingIllustrationNumber>750%</OnboardingIllustrationNumber>
+								<OnboardingIllustrationText>
+									Target collaterlization ratio
+								</OnboardingIllustrationText>
+							</div>
+						</OnboardingIllustrationContent>
+					</OnboardingIllustrationBox>
 				</CarouselSlide>
 				<CarouselSlide>
 					<OnboardingH1>{t('onboarding.slides.risks.title')}</OnboardingH1>
 					<OnboardingPMega>{t('onboarding.slides.risks.description')}</OnboardingPMega>
 					<OnboardingIllustration
-						src={`/images/onboarding/risks-${currentTheme ? 'dark' : 'light'}.png`}
+						style={{ width: '55%', padding: '40px' }}
+						src="/images/onboarding/risks.svg"
 					/>
 				</CarouselSlide>
 			</Carousel>
@@ -229,6 +242,30 @@ const OnboardingPMega = styled(PMega)`
 	line-height: 25px;
 	width: 100%;
 	max-width: 600px;
+	color: ${({ theme }) => theme.colorStyles.light3};
+	font-weight: 500;
+`;
+
+const OnboardingIllustrationBox = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 40px 60px 40px;
+`;
+
+const OnboardingIllustrationContent = styled.div`
+	margin-left: 40px;
+`;
+
+const OnboardingIllustrationNumber = styled.div`
+	font-size: 28px;
+	font-weight: bold;
+	color: ${({ theme }) => theme.colorStyles.brandBlue};
+`;
+
+const OnboardingIllustrationText = styled.div`
+	font-size: 14px;
+	color: ${({ theme }) => theme.colorStyles.subtext};
 `;
 
 const OnboardingIllustration = styled.img`
